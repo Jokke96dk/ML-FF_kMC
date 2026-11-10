@@ -1,0 +1,31 @@
+#!/bin/bash -l
+
+#SBATCH --nodes=xx
+#SBATCH --ntasks-per-node=xx
+#SBATCH -o out.txt
+#SBATCH -e error
+#SBATCH -t 24:00:00
+#SBATCH -A <your-project-account>
+
+# Load libraries. Should be modified to your own cluster
+module purge
+ml cpe/23.12
+ml ffmpeg/5.0.1
+ml gsl/2.7.1
+ml PDCOLD/23.12
+ml PrgEnv-gnu
+ml mpi4py/3.1.6-py311
+
+source <path-to-your-venv>/bin/activate
+
+
+
+# Back up the stored calculations before a restart
+for f in data_MLFF_*.pkl; do
+    [ -e "$f" ] || continue
+    num="${f#data_MLFF_}"        # strip prefix -> "1.pkl"
+    num="${num%.pkl}"            # strip suffix -> "1"
+    cp "$f" "copy_data_MLFF_${num}.pkl"
+done
+
+srun --ntasks=xx python -u -m mpi4py main.py

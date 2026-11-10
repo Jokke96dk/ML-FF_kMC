@@ -1,0 +1,9 @@
+# Tested with Python 3.13 on Linux (CPU). Other version may also work
+deepmd-kit[cpu,lmp]==3.2.0 
+mpich==5.0.2
+mpi4py==4.1.2
+ase==3.29.0
+numpy==2.5.4
+h5py==3.14.0
+sortedcontainers==2.4.0
+six==1.17.0

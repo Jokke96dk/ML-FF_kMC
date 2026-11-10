@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Output of a run
+out.txt
+error
+kMClog_*.txt
+coverages*.txt
+time.txt
+evs_exec.txt
+mcstep.txt
+siteids.txt
+stypes.txt
+detail_site_event_evol.hdf5
+data_MLFF_*.pkl
+copy_data_MLFF_*.pkl
+FRAMEWORK_POSCAR
+TEST_POSCAR
+Final_structure.vasp
+log/
+output_structure/
