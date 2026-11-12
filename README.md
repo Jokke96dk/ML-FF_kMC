@@ -10,8 +10,8 @@ simulation, using an machine-learning force field (ML-FF). The method can in pri
 other catalysts where structural changes during reaction affects the performance, but this code written
 for the case of Cu-CHA.
 
-See the preprint for further information:
-([preprint](link coming soon)):
+See the preprint for further information, see the preprint:
+Bjerregaard, J. D.; Votsmeier, M.; Grönbeck, H. On-the-fly Neural Network based Kinetic Monte Carlo Simulations of NH<sub>3</sub>-SCR over Cu-CHA. ChemRxiv 2026. DOI: 10.26434/chemrxiv.15012036/v1 
 
 # How does it work?
 
