@@ -12,8 +12,7 @@ for the case of Cu-CHA.
 
 See the preprint for further information:
 
-Bjerregaard, J. D.; Votsmeier, M.; Grönbeck, H. On-the-fly Neural Network based Kinetic Monte Carlo Simulations of NH<sub>3</sub>-SCR over Cu-CHA. ChemRxiv 2026. DOI: 10.26434/chemrxiv.15012036/v1 
-
+Bjerregaard, J. D.; Votsmeier, M.; Grönbeck, H. On-the-fly Neural Network based Kinetic Monte Carlo Simulations of NH<sub>3</sub>-SCR over Cu-CHA. *ChemRxiv* **2026**. DOI: [10.26434/chemrxiv.15012036/v1](https://doi.org/10.26434/chemrxiv.15012036/v1)
 # How does it work?
 
 The kMC part of the code is built on the MonteCoffee framework. For information on how the kMC code works, we
